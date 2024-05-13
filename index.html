@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint-Hov's Subs </title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imgs/favicon.ico">
+
+    </head>
+<body>
+    <!-- Loading overlay -->
+    <div class="overlay" id="overlay">
+        <div class="spinner-border text-light" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <div class="container" id="main-content">
+        <svg xmlns="http://www.w3.org/2000/svg">
+  
+            <!-- filterUnits is required to prevent clipping the blur outside the viewBox -->
+            
+              <filter id="motion-blur-filter" filterUnits="userSpaceOnUse">
+                
+                <!-- We only want horizontal blurring. x: 100, y: 0 -->
+                
+                  <feGaussianBlur stdDeviation="100 0"></feGaussianBlur>
+              </filter>
+          </svg>
+          
+          <!-- We use a custom attribute to set the text that the pseudo element should display and blur. In this case, we use the first character of the word. -->
+          
+          <span filter-content="S">Saint-Hov</span>
+          <img src="imgs/Screenshot 2024-05-13 201945.png" alt="">
+        <div id="subscriber-count" class="mt-4 ls">Loading...</div>
+        <a href="https://www.youtube.com/channel/UCl4dy7u2kibajf-c9DIaGwA" target="_blank" class="btn btn-primary mt-3">
+
+            <button class='glowing-btn'><span class='glowing-txt'>W<span class='faulty-letter'>A</span>TCH</span></button>
+
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
+ 
